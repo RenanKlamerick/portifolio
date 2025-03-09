@@ -63,6 +63,21 @@ header p {
     color: #ccc;
 }
 
+/* Efeito arredondado com sombra neon */
+img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #00ffcc;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+img:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.8), 0 0 40px rgba(0, 255, 204, 0.6);
+    transform: translateY(-5px);
+}
 /* Menu de navegação com botões estilizados */
 nav ul {
     list-style: none;
