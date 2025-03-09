@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Tech - Projetos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Renan Klamerick</h1>
+            <p>Técnico em Informática | Estudante de Agroecologia | Apaixonado por Tecnologia e Design</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre Mim</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Laboratório Digital EFADAP</h3>
+                    <p>Este foi o projeto que marcou o início da minha paixão por tecnologia. No laboratório digital da EFADAP, tive a oportunidade de montar e configurar hardwares, entender o funcionamento de cada componente e como eles se integram para criar um sistema funcional. Foi uma experiência incrível que despertou meu interesse por hardware e desenvolvimento.</p>
+                    <a href="LabDigital.html" class="btn">Ver Projeto</a>
+                </div>
+                <div class="project-card">
+                    <h3>Horta Mandala (Projeto Estudantil)</h3>
+                    <p>Projeto desenvolvido como parte da conclusão do curso de Agroecologia. A Horta Mandala foi uma experiência enriquecedora, onde pude aplicar conceitos de sustentabilidade, agricultura orgânica e design circular. Foi um desafio gratificante que reforçou meu interesse em soluções ecológicas e inovadoras.</p>
+                    <a href="#" class="btn">Ver Projeto</a>
+                </div>
+                <div class="project-card">
+                    <h3>Estágio na Agroindústria Terra Viva (GV Polpas)</h3>
+                    <p>Durante meu estágio na Terra Viva, tive a oportunidade de trabalhar com processamento de polpas de frutas e gestão de produção. Aprendi sobre controle de qualidade, boas práticas de fabricação e a importância da agroindústria para a economia local. Foi uma experiência que combinou meus conhecimentos técnicos com a prática.</p>
+                    <a href="#" class="btn">Ver Projeto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Renan Klamerick. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const sections = document.querySelectorAll('section');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    });
+</script>
