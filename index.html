@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+<head>      
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Tech - Início</title>
+    <title>Portfólio | Renan Klamerick</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,19 +13,65 @@
             <p>Técnico em Informática | Estudante de Agroecologia | Apaixonado por Tecnologia e Design</p>
             <nav>
                 <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="sobre.html">Sobre Mim</a></li>
-                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="welcome">
+    <section id="inicio">
         <div class="container">
-            <h2>Seja bem vindo ao meu primeiro projeto com HTML e CSS</h2>
+            <h2>Seja bem-vindo ao meu primeiro projeto com HTML e CSS</h2>
             <p>Este é o meu portfólio, um espaço dedicado a compartilhar meus projetos, habilidades e experiências. Aqui, você poderá explorar um pouco do meu trabalho, conhecer os desafios que enfrentei e as soluções que desenvolvi ao longo da minha jornada. Convido você a navegar e descobrir mais sobre minha trajetória, minha paixão pela tecnologia e minha dedicação em transformar ideias em realidade. Sinta-se à vontade para explorar e conhecer um pouco do que tenho construído!</p>
-            <a href="sobre.html" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <div class="container" style="text-align: center;">
+            <h2>Sobre Mim</h2>
+            <img src="img/me.jpg" alt="Sobre" class="profile-pic">
+            <p>Olá! Meu nome é Renan Klamerick, e sou um entusiasta de tecnologia com foco em hardware e desenvolvimento. Sempre gostei de desmontar e montar computadores, explorando como cada peça funciona e como tudo se conecta para criar um sistema funcional. Essa curiosidade me motivou a aprender mais sobre tecnologia desde cedo.</p>
+            <p>Além da parte de hardware, também tenho interesse em desenvolvimento de software e estou sempre em busca de novas linguagens, ferramentas e projetos que possam me desafiar. Gosto de compartilhar o que aprendo e transformar ideias em soluções práticas. Este espaço foi criado justamente para isso: mostrar um pouco da minha jornada e das coisas que venho construindo com dedicação.</p>
+            
+        </div>
+    </section>
+
+    <section id="projetos">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="project-grid">
+                <!-- Projeto 1 -->
+                <div class="project-card">
+                    <h3>Laboratório de Informática - EFA Dom Antônio Possamai</h3>
+                    <p>
+                        Responsável pela organização e montagem do laboratório de informática, realizando a formatação e
+                        instalação dos sistemas operacionais e softwares educacionais em computadores desktops. Além disso, foi
+                        integrado o sistema de gerenciamento Microsoft Family, com o objetivo de bloquear sites inapropriados e
+                        garantir um ambiente seguro e produtivo para os alunos.
+                    </p>
+                </div>
+                <!-- Projeto 2 -->    
+                <div class="project-card">
+                    <h3>Portfólio Pessoal</h3>
+                    <p>
+                        Desenvolvimento completo deste portfólio com HTML e CSS modernos, utilizando boas práticas de design
+                        responsivo, animações e identidade visual personalizada. O projeto visa apresentar habilidades técnicas,
+                        experiências e projetos desenvolvidos de forma clara e impactante.
+                    </p>
+                </div>
+                <!-- Projeto 3 -->
+                <div class="project-card">
+                    <h3>Servidor NAS Caseiro</h3>
+                    <p>
+                        Projeto de montagem de um servidor NAS (Network Attached Storage) utilizando hardware reaproveitado e
+                        software open-source como o TrueNAS. O servidor foi configurado para oferecer armazenamento em rede
+                        doméstico, com recursos como backup automático, acesso remoto seguro, gerenciamento de permissões e
+                        sincronização de arquivos entre dispositivos.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -34,22 +80,11 @@
             <p>&copy; 2025 Renan Klamerick. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <!-- Botão para voltar ao topo -->
+    <button id="scrollTopBtn" title="Voltar ao topo">▲</button>
+
+    <!-- Importando o arquivo JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const sections = document.querySelectorAll('section');
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-    });
-</script>
