@@ -4,43 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio | Renan Klamerick</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <header>
+        <div>
+            <img src="img/me.jpg" alt="Sobre" class="profile-pic">
+        </div>
+
         <div class="container">
             <h1>Renan Klamerick</h1>
             <p>Técnico em Informática | Estudante de Agroecologia | Apaixonado por Tecnologia e Design</p>
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre">Sobre Mim</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
     <section id="inicio">
+        <div>
+            <h2>Seja bem-vindo</h2>
+        </div>
+
         <div class="container">
-            <h2>Seja bem-vindo ao meu primeiro projeto com HTML e CSS</h2>
             <p>Este é o meu portfólio, um espaço dedicado a compartilhar meus projetos, habilidades e experiências. Aqui, você poderá explorar um pouco do meu trabalho, conhecer os desafios que enfrentei e as soluções que desenvolvi ao longo da minha jornada. Convido você a navegar e descobrir mais sobre minha trajetória, minha paixão pela tecnologia e minha dedicação em transformar ideias em realidade. Sinta-se à vontade para explorar e conhecer um pouco do que tenho construído!</p>
         </div>
     </section>
 
     <section id="sobre">
-        <div class="container" style="text-align: center;">
+        <div>
             <h2>Sobre Mim</h2>
-            <img src="img/me.jpg" alt="Sobre" class="profile-pic">
+        </div>
+
+        <div class="container" style="text-align: center;">
             <p>Olá! Meu nome é Renan Klamerick, e sou um entusiasta de tecnologia com foco em hardware e desenvolvimento. Sempre gostei de desmontar e montar computadores, explorando como cada peça funciona e como tudo se conecta para criar um sistema funcional. Essa curiosidade me motivou a aprender mais sobre tecnologia desde cedo.</p>
             <p>Além da parte de hardware, também tenho interesse em desenvolvimento de software e estou sempre em busca de novas linguagens, ferramentas e projetos que possam me desafiar. Gosto de compartilhar o que aprendo e transformar ideias em soluções práticas. Este espaço foi criado justamente para isso: mostrar um pouco da minha jornada e das coisas que venho construindo com dedicação.</p>
-            
         </div>
     </section>
 
     <section id="projetos">
-        <div class="container">
+        <div>
             <h2>Projetos</h2>
+        </div>
+        <div>
             <div class="project-grid">
                 <!-- Projeto 1 -->
                 <div class="project-card">
@@ -74,6 +87,36 @@
             </div>
         </div>
     </section>
+    <header>
+        <div>
+            <h2>Contato</h2>
+        </div>
+        <div class="container" style="text-align: center;">
+            <ul>
+                <li>
+                    <a class= href="https://wa.me/5569993912197" target="_blank">
+                        <img src="svg/whatsapp.svg" alt="WhatsApp">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/renanklame" target="_blank">
+                        <img src="svg/instagram.svg" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/RenanKlamerick" target="_blank">
+                        <img src="svg/github.svg" alt="GitHub">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/renan-klamerick" target="_blank">
+                        <img src="svg/linkedin.svg" alt="LinkedIn">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </header>
+
 
     <footer>
         <div class="container">
@@ -82,7 +125,7 @@
     </footer>
 
     <!-- Botão para voltar ao topo -->
-    <button id="scrollTopBtn" title="Voltar ao topo">⥣</button>
+    <button id="scrollTopBtn" title="Voltar ao topo">▲</button>
 
     <!-- Importando o arquivo JavaScript -->
     <script src="script.js"></script>
